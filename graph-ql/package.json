@@ -1,0 +1,20 @@
+{
+  "name": "graph-ql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Juan Posada",
+  "license": "ISC",
+  "dependencies": {"apollo-datasource-rest": "^3.4.0",
+                   "apollo-server": "^3.5.0",
+                   "apollo-server-core": "^3.5.0",
+                   "apollo-server-express": "^3.5.0",
+                   "express": "^4.17.1",
+                   "express-graphql": "^0.12.0",
+                   "graphql": "^15.7.2",
+                   "lodash": "^4.17.21",
+                   "node-fetch": "^2.6.1"
+                  }
+}
