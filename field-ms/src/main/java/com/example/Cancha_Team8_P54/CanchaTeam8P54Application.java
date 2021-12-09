@@ -24,7 +24,7 @@ public class CanchaTeam8P54Application {
 										"Bogota",
 										"11",
 										"Juan Posada",
-												"50000");
+					                       "50000");
 
 			//repository.insert(cancha);
 		};

@@ -1,10 +1,10 @@
-package services;
+package com.example.Booking_Field_Team8_P54.services;
 
 
 import lombok.AllArgsConstructor;
-import model.Booking;
+import com.example.Booking_Field_Team8_P54.model.Booking;
 import org.springframework.stereotype.Service;
-import repository.BookingRepository;
+import com.example.Booking_Field_Team8_P54.repository.BookingRepository;
 
 import java.util.List;
 
@@ -23,8 +23,8 @@ public class BookingService {
 
     //Funcion para obtener las reservas mediante email
 
-    public Booking findBookingByEmail(String email){
-        return bookingRepository.findBookingByemail(email);
+    public Booking findBookingByUsername(String username){
+        return bookingRepository.findBookingByusername(username);
 
     }
 

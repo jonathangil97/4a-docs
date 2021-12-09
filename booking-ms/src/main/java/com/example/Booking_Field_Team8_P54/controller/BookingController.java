@@ -1,15 +1,15 @@
-package controller;
+package com.example.Booking_Field_Team8_P54.controller;
 
 
 import lombok.AllArgsConstructor;
-import model.Booking;
+import com.example.Booking_Field_Team8_P54.model.Booking;
 import org.springframework.web.bind.annotation.*;
-import services.BookingService;
+import com.example.Booking_Field_Team8_P54.services.BookingService;
 import java.util.List;
 
 @CrossOrigin(origins= "*")
 @RestController
-@RequestMapping("/reserva")
+@RequestMapping("/booking")
 @AllArgsConstructor
 
 public class BookingController {
@@ -20,9 +20,15 @@ public class BookingController {
         return bookingService.getallBooking();
     }
 
-    @GetMapping("/buscar_reserva/{email}")
-    public Booking buscar_cancha_email(@PathVariable String email){
-        return bookingService.findBookingByEmail(email);
+    @GetMapping("buscar_reserva")
+    public List<Booking> IndexBooking(){
+
+        return bookingService.getallBooking();
+    }
+
+    @GetMapping("/buscar_reserva/{username}")
+    public Booking buscar_cancha_email(@PathVariable String username){
+        return bookingService.findBookingByUsername(username);
     }
 
     @PostMapping("/crear_reserva")
@@ -31,7 +37,7 @@ public class BookingController {
     }
 
     @PostMapping("/borrar_reserva/{id}")
-    public Booking crear_reserva(@RequestBody String id){
+    public Booking borrar_reserva(@PathVariable String id){
         return bookingService.deleteBooking(id);
     }
 
