@@ -7,9 +7,6 @@ import lombok.AllArgsConstructor;
 import com.example.Cancha_Team8_P54.model.Cancha;
 import org.springframework.web.bind.annotation.*;
 import com.example.Cancha_Team8_P54.services.CanchaService;
-import com.example.Cancha_Team8_P54.repository.CanchaRepository;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @CrossOrigin(origins= "*")
