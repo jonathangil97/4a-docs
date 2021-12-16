@@ -1,7 +1,7 @@
 const bookingResolver = {
     Query: {
         bookingByUsername: async(_, { username }, { dataSources }) => {
-            return dataSources.BookingAPI.getBooking(username)
+            return dataSources.BookingAPI.bookingByUsername(username)
 
         }
     },

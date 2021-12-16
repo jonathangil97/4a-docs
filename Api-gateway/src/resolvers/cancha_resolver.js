@@ -1,7 +1,7 @@
 const canchaResolver = {
     Query: {
         canchaByNombre: async(_, { nombre }, { dataSources }) => {
-            return dataSources.CanchaAPI.getCancha(nombre)
+            return dataSources.CanchaAPI.canchaByNombre(nombre)
 
         }
     },
